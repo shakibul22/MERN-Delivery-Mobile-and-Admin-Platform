@@ -4,10 +4,10 @@
   "description": "TypeScript Express API for the MERN delivery platform",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "node init && nodemon",
     "typecheck": "tsc --noEmit",
-    "build": "npm run typecheck && tsup",
-    "start": "node dist/index.js",
+    "build": "node init && npm run typecheck && tsup",
+    "start": "node init && node dist/index.js",
     "seed:categories": "tsx ./src/scripts/seed-categories.ts",
     "seed:restaurants": "tsx ./src/scripts/seed-restaurants.ts",
     "seed:driver": "tsx ./src/scripts/seed-driver.ts",
